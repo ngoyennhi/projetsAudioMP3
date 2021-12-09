@@ -1,0 +1,17 @@
+{ "name": "playlist",
+    "song":[
+    {"id": "1",
+    "title": "Dance Monkey",
+    "Singer": "Tones and I",
+    "Writer": "Tones and I",
+    "Picture": "url('tonesandiDanceMonkey.jpg')"} ,
+
+    {"id": "2",
+        "title": "Dance Monkey",
+        "Singer": "Tones and I",
+        "Writer": "Tones and I",
+        "Picture": "url('tonesandiDanceMonkey.jpg')"}
+
+]
+   
+}
