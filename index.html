@@ -9,26 +9,23 @@
 
 <body>
 
-    <audio src="tones_and_i.mp3"></audio>
+    <audio id="audiotrack" src="tones_and_i.mp3"></audio>
 
     <div id="iphone13pro">
         <div id="screen">
+
             <a href="#" id="btn_title" class="btn btnSmall btn_title btnScreen"></a>
+
+            <div id="song_title" class="song_title display_off">
+            </div>
+
             <div id="audio_muted">
                 <a href="#" id="btn_audio" class="btn btnSmall btn_audio display_on btnScreen"></a>
                 <a href="#" id="btn_muted" class="btn btnSmall btn_muted display_off btnScreen"></a>
             </div>
-            <!-- Volume bar -->
-            <!-- <div class="container">
-                <div class="range-slider">
-                    <input type="range" orient="vertical" min="0" max="100" />
-                    <div class="range-slider__bar theme1"></div>
-                    <div class="range-slider__thumb"></div>
-                </div>
-            </div> -->
 
             <!-- wave bar -->
-            <div id="wavebar" class="container container_wave">
+            <div id="wavebar" class="container container_wave display_off">
                 <div class="bar"></div>
                 <div class="bar"></div>
                 <div class="bar"></div>
@@ -52,15 +49,28 @@
                 <div class="bar"></div>
                 <div class="bar"></div>
             </div>
+                   <!-- modifier the volumn -->
+            <div id="controlvolumn" class="slidecontainer display_off">
+                <input type="range" orient="vertical" min="0" max="100" value="50" class="slider display_off"
+                    id="myRange">
+            </div>
         </div>
-
+ 
+        <!-- Shows the progress of the sound -->
+        <div id="timemingbar" class="audio-duration">
+            <div class="timer">
+                <div id="timeStart">00:00:00</div>
+                <div id="timeEnd">00:00:00</div>
+            </div>
+            <input class="audio-duration-toggler" id="duration-toggler" type="range" min="0" value="1" step="any" />
+        </div>
         <div id="controlbar">
             <!-- utiliser balise a pour afficher les images facilement -->
             <a href="#" id="btn_stop" class="btn btnSmall btn_stop"></a>
             <a href="#" id="btn_back" class="btn btnSmall btn_back"></a>
             <div id="playIconContainer">
-                <a href="#" id="btn_play" class="btn btnBig btn_play display_on"></a>
-                <a href="#" id="btn_pause" class="btn btnBig btn_pause display_on display_off"></a>
+                <a href="#" id="btn_play" class="btn btnBig btn_play display_off"></a>
+                <a href="#" id="btn_pause" class="btn btnBig btn_pause display_on"></a>
             </div>
             <a href="#" id="btn_next" class="btn btnSmall btn_next"></a>
             <a href="#" id="btn_volume" class="btn btnSmall btn_volume"></a>
